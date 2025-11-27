@@ -1,67 +1,57 @@
 {
+    // --- BASIC EDITOR ---
     "code-runner.runInTerminal": true,
-    // Font
-    "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 22,
     "editor.fontLigatures": true,
-
     "editor.renderLineHighlight": "none",
-    "editor.scrollbar.horizontal": "hidden",
     "editor.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": "on", 
-
+    "editor.cursorSmoothCaretAnimation": "on",
     "files.autoSave": "onFocusChange",
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.sideBar.location": "right",
-    "workbench.activityBar.location": "hidden",
-    "editor.minimap.enabled": false,
-
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "editor.scrollbar.vertical": "visible",
-
-    "workbench.iconTheme": "material-icon-theme",
+    "editor.mouseWheelZoom": true,
+    
+    // --- MINIMAL UI (ZEN MODE) ---
+    "window.titleBarStyle": "custom",
     "workbench.startupEditor": "none",
     "workbench.editor.showTabs": "single",
-    "breadcrumbs.enabled": false,
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "chat.commandCenter.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
-    "window.zoomLevel": 1,
-
-    "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
-    "editor.mouseWheelZoom": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "security.workspace.trust.untrustedFiles": "open",
+    "window.commandCenter": false,
+    "breadcrumbs.enabled": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.minimap.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    
+    // --- SCROLLBARS ---
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.verticalScrollbarSize": 0,
 
+    // --- THEME & ICONS ---
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         "editorGroup.border": "#00000000",
         "editor.lineHighlightBorder": "#00000000",
         "panel.border": "#00000000",
-        "sideBar.border": "#00000000"
+        "sideBar.border": "#00000000",
+        "tab.border": "#00000000",
     },
-    
-    "makefile.configureOnOpen": true,
-    "terminal.integrated.mouseWheelZoom": true,
+
+    // --- TERMINAL ---
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+
+    // --- MISC ---
     "explorer.confirmDelete": false,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "explorer.sortOrder": "type",
-    "zenMode.fullScreen": false,
-    "terminal.external.windowsExec": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\WezTerm.lnk",
-    "accessibility.verbosity.terminal": false,
-    "accessibility.accessibleView.closeOnKeyPress": false,
-    "terminal.integrated.altClickMovesCursor": false,
-    "terminal.integrated.fontSize": 11,
-    "python.createEnvironment.trigger": "off",
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 }
